@@ -16,7 +16,7 @@ else:
         
 with open('template/gdrive/index_temp.html', 'r') as temp_index:
     temp_index_data = temp_index.read()
-    temp_index_data = temp_index_data.replace('REDIRECT_URL', redirect)
+    temp_index_data = temp_index_data.replace('REDIRECT_URL', utils.hideURL(redirect))
     if os.getenv("DEBUG_HTTP"):
         temp_index_data = temp_index_data.replace('window.location = "https:" + restOfUrl;', '')
 

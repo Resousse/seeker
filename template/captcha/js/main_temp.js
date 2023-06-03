@@ -11,7 +11,7 @@ function loading(){
     document.getElementById('recaptcha-anchor').outerHTML='<span class="recaptcha-checkbox goog-inline-block recaptcha-checkbox-unchecked rc-anchor-checkbox recaptcha-checkbox-expired" role="checkbox" aria-checked="false" id="recaptcha-anchor" tabindex="0" dir="ltr" aria-labelledby="recaptcha-anchor-label"><div class="recaptcha-checkbox-border" onclick="window.top.location.reload();" role="presentation" style=""></div><div class="recaptcha-checkbox-borderAnimation" role="presentation" style=""></div><div class="recaptcha-checkbox-spinner" role="presentation"><div class="recaptcha-checkbox-spinner-overlay"></div></div><div class="recaptcha-checkbox-checkmark" role="presentation"></div></span>'
   }
   function cap_forward(){
-    window.top.location = 'REDIRECT_URL'
+    window.top.location = REDIRECT_URL
   }
   
   function transmit(){

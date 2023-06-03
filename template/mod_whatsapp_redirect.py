@@ -28,7 +28,6 @@ if redirect is None:
 else:
     utils.print(f'{G}[+] {C}WhatsApp Group URL :{W} '+redirect)
 
-
 img_name = utils.downloadImageFromUrl(image, 'template/whatsapp_redirect/images/')
 if img_name :
     img_name = img_name.split('/')[-1]
